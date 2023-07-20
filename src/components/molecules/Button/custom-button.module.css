@@ -1,0 +1,40 @@
+.button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #6e6d6c;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    pointer-events: none;
+    /* cursor: pointer; */
+    transition: background-color 0.3s ease;
+  }
+  
+  .completedButton {
+    background-color: #ee8c26;
+    cursor: pointer;
+    pointer-events: all;
+  }
+  
+  .button:hover {
+    background-color: #ffa94d;
+  }
+  
+  .buttonContainer {
+    width: 325px;
+    margin: 0 auto;
+    margin-top: 0.4rem;
+  }
+  
+  .clean {
+    background-color: #000;
+    cursor: pointer;
+    pointer-events: all;
+  }
+  
+  .clean:hover {
+    background-color: #1f1f1f;
+  }
+  

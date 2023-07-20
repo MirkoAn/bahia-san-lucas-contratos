@@ -1,0 +1,13 @@
+{
+  "extends": ["next", "prettier"],
+  "rules": {
+    "indent": ["error", 2], // 2 espacios de indentación
+    "quotes": ["error", "double"], // comillas dobles para las cadenas
+    "semi": ["error", "always"], // punto y coma al final de cada línea
+    "no-unused-vars": "warn", // advertir sobre variables no utilizadas
+    "react/jsx-uses-react": "off", // no requerir la importación de React en archivos JSX (desde React 17)
+    "react/react-in-jsx-scope": "off", // no requerir la importación de React en archivos JSX (desde React 17)
+    "react-hooks/rules-of-hooks": "error", // asegurarse de seguir las reglas de los hooks de React
+    "react-hooks/exhaustive-deps": "warn" // advertir sobre dependencias faltantes en los efectos de los hooks
+  }
+}

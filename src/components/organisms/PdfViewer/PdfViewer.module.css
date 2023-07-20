@@ -1,0 +1,29 @@
+.pdfView {
+  width: 325px;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+/* Estilos para el botón */
+.button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #10395a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #335470;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}

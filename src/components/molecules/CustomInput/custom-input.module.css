@@ -1,0 +1,28 @@
+.label {
+  display: block;
+  margin-bottom: 0.8rem;
+  color: #10395a;
+}
+
+.inputText,
+.textarea {
+  min-width: 325px;
+  width: auto;
+  padding: 0.8rem;
+  border: 1px solid #10395a;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.checkboxContainer {
+  display: flex;
+  margin-top: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #10395a;
+}
+
+.checkboxInput {
+  margin-left: 24px;
+  width: 18px;
+  height: 18px;
+}

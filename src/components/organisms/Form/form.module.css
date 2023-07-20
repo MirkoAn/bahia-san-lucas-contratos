@@ -1,0 +1,61 @@
+/* Estilos para el formulario */
+.form {
+  width: 325px;
+  margin: 0 auto;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.8rem;
+  color: #10395a;
+}
+
+.inputText,
+.textarea {
+  min-width: 325px;
+  width: auto;
+  padding: 0.8rem;
+  border: 1px solid #10395a;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Estilos para el botón */
+.button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #6e6d6c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  pointer-events: none;
+  /* cursor: pointer; */
+  transition: background-color 0.3s ease;
+}
+
+.completedButton {
+  background-color: #ee8c26;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.button:hover {
+  background-color: #ffa94d;
+}
+
+.buttonContainer {
+  width: 325px;
+  margin: 0 auto;
+  margin-top: 0.4rem;
+}
+
+.clean {
+  background-color: #000;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.clean:hover {
+  background-color: #1f1f1f;
+}
