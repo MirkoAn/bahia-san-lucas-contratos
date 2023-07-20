@@ -6,6 +6,7 @@ const DisplayDeclaracion = ({ name, lastName, dni, address, terreno, ocupacion, 
   return (
     <PDFViewer>
       <DeclaracionJurada
+        filename='Declaracion Jurada'
         name={name}
         lastName={lastName}
         dni={dni}

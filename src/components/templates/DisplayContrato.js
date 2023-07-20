@@ -6,6 +6,7 @@ const DisplayContrato = ({ name, lastName, dni, contractNumber, formattedDate, a
   return (
     <PDFViewer>
       <Contrato
+        filename='Contrato'
         name={name}
         lastName={lastName}
         dni={dni}

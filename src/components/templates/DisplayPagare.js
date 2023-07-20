@@ -6,6 +6,7 @@ const DisplayPagare = ({ name, lastName, dni, address, totalAmount, isConyuge, c
   return (
     <PDFViewer>
       <Pagare
+        filename='Pagare'
         name={name}
         lastName={lastName}
         dni={dni}

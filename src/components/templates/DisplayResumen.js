@@ -6,6 +6,7 @@ const DisplayResumen = ({ name, lastName, dni, formattedDate }) => {
   return (
     <PDFViewer>
       <Resumen
+        filename='Resumen'
         name={name}
         lastName={lastName}
         dni={dni}

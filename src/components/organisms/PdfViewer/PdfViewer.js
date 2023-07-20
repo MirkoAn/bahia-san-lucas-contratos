@@ -14,18 +14,14 @@ const PDFViewer = ({ children }) => {
         <PDFDownloadLink
           className={styles.pdfView}
           document={children}
-          fileName={`${children?.props?.name}-${children?.props?.lastName}-${children?.type?.name}.pdf`}
+          fileName={`${children?.props?.name}-${children?.props?.lastName}-${children?.props?.filename}.pdf`}
         >
-          {({ blob, url, loading, error }) => {
-            console.log("blob ->", blob);
-            console.log("url ->", url);
-            console.log("loading ->", loading);
-            console.log("error ->", error);
+          {({ loading }) => {
             return loading ? (
               <div className={styles.loading}>Cargando...</div>
             ) : (
               <button className={styles.button}>
-                Descargar {children?.type?.name}
+                Descargar {children?.props?.filename}
               </button>
             );
           }}
