@@ -134,7 +134,7 @@ const expensesDetails = [
   "Respecto de las tasas, impuesto predial, arbitrios, derechos y cualquier otro tributo que corresponda, EL/LOS COMPRADOR(ES) asumirá(n) su pago a partir de que se le entregue dicho bien, para lo cual LA VENDEDORA presentará ante la Municipalidad el Acta de Entrega correspondiente y una copia del presente contrato.",
 ];
 
-const Contrato = ({ name, lastName, dni, contractNumber, formattedDate, address, isConyuge, conyugeName, conyugeLastName, conyugeDni, terreno }) => {
+const Contrato = ({ name, lastName, dni, contractNumber, formattedDate, address, isConyuge, conyugeName, conyugeLastName, conyugeDni, terreno, metraje }) => {
 
   return (
     <Document>
@@ -148,14 +148,14 @@ const Contrato = ({ name, lastName, dni, contractNumber, formattedDate, address,
         <Text style={styles.title}>
         PROYECTO PIURA ALEGRE
           {"\n"}
-        COMPRA VENTA DE BIEN FUTURO
+        COMPRAVENTA DE BIEN FUTURO
           {"\n"}
         PAGO FINANCIADO Nº {contractNumber}
         </Text>
         {
           isConyuge ? (
             <Text style={styles.text}>
-              Conste, por el presente documento privado, el Contrato de Compra Venta de Bien Futuro
+              Conste, por el presente documento privado, el Contrato de COMPRAVENTA de Bien Futuro
               que celebran de una parte la empresa <DynamicInput>INMOBILIARIA &amp; CONSTRUCTORA PIURA
               NORTE SRL</DynamicInput>, con RUC N° 20610822330, debidamente representada por su Gerente
               General <DynamicInput>SR. CRISTHIAN HECTOR AGURTO EGOAVIL</DynamicInput>, con DNI Nº 46181105, con
@@ -171,7 +171,7 @@ const Contrato = ({ name, lastName, dni, contractNumber, formattedDate, address,
             </Text>
           ) :
             <Text style={styles.text}>
-            Conste, por el presente documento privado, el Contrato de Compra Venta de Bien Futuro
+            Conste, por el presente documento privado, el Contrato de COMPRAVENTA de Bien Futuro
             que celebran de una parte la empresa <DynamicInput>INMOBILIARIA &amp; CONSTRUCTORA PIURA
             NORTE SRL</DynamicInput>, con RUC N° 20610822330, debidamente representada por su Gerente
             General <DynamicInput>SR. CRISTHIAN HECTOR AGURTO EGOAVIL</DynamicInput>, con DNI Nº 46181105, con
@@ -219,7 +219,7 @@ const Contrato = ({ name, lastName, dni, contractNumber, formattedDate, address,
         simultánea de Viviendas bajo el programa de vivienda social Techo Propio AVN
         denominado <DynamicInput>PIURA ALEGRE</DynamicInput>, en el cual se considera la existencia de 475 viviendas,
         entre las que se encuentra la proyectada como <DynamicInput>{terreno}</DynamicInput>, la misma que tendrá
-        un área construida de <DynamicInput>35.00 m2</DynamicInput>, en un lote de <DynamicInput>97.20 m2</DynamicInput>, tal como se señala en el
+        un área construida de <DynamicInput>35.00 m2</DynamicInput>, en un lote de <DynamicInput>{metraje}</DynamicInput>, tal como se señala en el
         documento denominado “Plano del Proyecto de Lotización para la construcción de
         viviendas bajo el programa de vivienda social Techo Propio AVN” y del cual <DynamicInput>EL/LOS COMPRADOR(ES) </DynamicInput>
         declara(n) tener pleno conocimiento.
@@ -273,7 +273,7 @@ const Contrato = ({ name, lastName, dni, contractNumber, formattedDate, address,
         pactado en la cláusula sétima, en la forma y oportunidad y lugar convenidos.
         </Text>
         <Text style={styles.text}>
-        La presente compra venta es AD CORPUS y comprende los suelos, usos, costumbres,
+        La presente COMPRAVENTA es AD CORPUS y comprende los suelos, usos, costumbres,
         servidumbres, entradas, salidas y todo cuanto de hecho y derecho corresponda al Lote
         Futuro que es materia del presente contrato, sin reserva ni limitación alguna por el
         presente documento.
@@ -304,7 +304,7 @@ const Contrato = ({ name, lastName, dni, contractNumber, formattedDate, address,
         <Text style={styles.text}>
           <Subtitle>CONDICIÓN SUSPENSIVA</Subtitle>
           {"\n"}
-          <DynamicInput>SEXTA: </DynamicInput>Ambas partes acuerdan que el presente Contrato de Compra Venta de Bien
+          <DynamicInput>SEXTA: </DynamicInput>Ambas partes acuerdan que el presente Contrato de COMPRAVENTA de Bien
         Futuro está sujeto a la condición suspensiva de que llegue a existir el bien futuro
         señalado en la cláusula segunda, la obtención del Bono Familiar Habitacional (BFH). y su
         correspondiente cancelación total del precio pactado incluyendo el BFH. Por lo tanto, al

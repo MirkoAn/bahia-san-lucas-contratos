@@ -76,6 +76,7 @@ const FinalStep = ({ formData, setFormData }) => {
       totalAmount: "",
       ocupacion: "",
       terreno: "",
+      metraje: "",
     });
     setIsCompleted(false);
     router.push("/");
@@ -103,6 +104,13 @@ const FinalStep = ({ formData, setFormData }) => {
           name='terreno'
           onChange={handleInputChange}
         />
+        <CustomInput
+          label='Área del terreno'
+          value={formData.metraje}
+          name='metraje'
+          onChange={handleInputChange}
+          placeholder='Ejemplo: 60 m2'
+        />        
         <CustomButton allInputsCompleted={true}>
           GENERAR DOCUMENTOS
         </CustomButton>
@@ -121,6 +129,7 @@ const FinalStep = ({ formData, setFormData }) => {
             conyugeLastName={formData.conyugeLastName.toUpperCase()}
             conyugeDni={formData.conyugeDni}
             terreno={formData.terreno}
+            metraje={formData.metraje}
           />
           <DisplayConstancia
             name={formData.name.toUpperCase()}

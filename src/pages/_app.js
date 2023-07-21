@@ -25,6 +25,7 @@ const App = ({ Component, pageProps }) => {
     totalAmount: "",
     ocupacion: "",
     terreno: "",
+    metraje: "",
   });
 
   return (

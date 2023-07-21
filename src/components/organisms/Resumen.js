@@ -82,7 +82,7 @@ const resumenDetails = [
   "Precio de venta del lote ofertado, incluyendo la forma de pago, plazo, moneda en la que se realiza el pago, los gastos y tributos, promociones y descuentos, y cronograma de pagos debidamente desagregado.",
   "Condiciones de la separación: vigencia, causales y efectos de la resolución (gastos administrativos y penalidades). En la venta de inmuebles sobre planos o de bienes futuros, el proveedor debe devolver el íntegro de los pagos adelantados efectuados por todo concepto a sola solicitud del consumidor, en el caso de que la prestación no se llegue a ejecutar por causas atribuibles al proveedor.",
   "Datos del proveedor: Partida Registral de la Persona Jurídica, nombre de los representantes legales con sus vigencias de poder debidamente inscrito, Registro Único de Contribuyentes (RUC) o Documento Nacional de Identidad (DNI), de ser el caso.",
-  "Contrato de compra venta solicitado.",
+  "Contrato de COMPRAVENTA solicitado.",
 ];
 
 const Resumen = ({ name, lastName, dni, formattedDate }) => {

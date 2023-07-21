@@ -96,7 +96,7 @@ const Constancia = ({ name, lastName, dni, contractNumber, formattedDate }) => {
           </DynamicInput>
           , identificado con DNI Nº <DynamicInput>{dni}</DynamicInput>, declaro
           haber recibido de la empresa INMOBILIARIA &amp; CONSTRUCTORA PIURA
-          NORTE S.R.L, el contrato de compra venta de bien futuro N°
+          NORTE S.R.L, el contrato de COMPRAVENTA de bien futuro N°
           <DynamicInput> {contractNumber}</DynamicInput>, debidamente firmado por su
           representante legal.
         </Text>
