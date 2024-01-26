@@ -106,13 +106,12 @@ const Subtitle = ({ children }) => (
 const resolutionDetails = [
   "Por incumplimiento en el pago de las cuotas pactadas.",
   "Por resolución unilateral de EL/LOS COMPRADOR(ES) que no está(n) en mora.",
-  "Por no calificar o perder EL/LOS COMPRADOR(ES) al Bono Familiar Habitacional.",
   "Por incumplimiento de las obligaciones contractuales y causas imputables a EL/LOS COMPRADOR(ES).",
   "Por causa imputable a LA VENDEDORA."
 ];
 
 const penaltyDetails = [
-  "Se aplicará una penalidad equivalente al treinta por ciento (30.00%) de lo abonado al capital a la fecha de resolución del contrato, sin incluir intereses compensatorios y gastos administrativos, si la resolución se efectuara dentro de los tres meses de celebrado el presente contrato.",
+  "Se aplicará una penalidad equivalente al treinta por ciento (40.00%) de lo abonado al capital a la fecha de resolución del contrato, sin incluir intereses compensatorios y gastos administrativos, si la resolución se efectuara dentro de los tres meses de celebrado el presente contrato.",
   "Se aplicará una penalidad equivalente al sesenta por ciento (60.00%) de lo abonado al capital a la fecha de resolución del contrato sin incluir intereses compensatorios y gastos administrativos, si la resolución se efectuara entre el cuarto y sexto mes de celebrado el presente contrato.",
   "Se aplicará una penalidad equivalente al ochenta por ciento (80.00%) de lo abonado al capital a la fecha de resolución del contrato sin incluir intereses compensatorios y gastos administrativos, si la resolución se efectuara a partir del sétimo mes de celebrado el presente contrato y la fecha de comunicación de suscripción del contrato definitivo.",
   "Se aplicará una penalidad equivalente al cien por ciento (100%) de lo abonado al capital a la fecha de resolución del contrato sin incluir intereses compensatorios y gastos administrativos, por causa imputable a EL/LOS COMPRADOR(ES), si la resolución se efectuara dentro de los 30 días una vez comunicado a EL/LOS COMPRADOR(ES) la fecha de suscripción del contrato definitivo. Asimismo, se aplicará la presente penalidad si, aun sin mediar comunicación de desistimiento de la compraventa por parte de EL/LOS COMPRADOR(ES), no se cumpliera con suscribir el contrato de compraventa definitivo por causas imputables a EL/LOS COMPRADOR(ES)."
@@ -125,7 +124,7 @@ const noncomplianceDetails = [
 ];
 
 const obligationDetails = [
-  "Cuando EL/LOS COMPRADOR(ES) no cumpla(n) con firmar el contrato de compraventa definitivo según se indica en la cláusula cuarta y novena del presente contrato."
+  "Cuando EL/LOS COMPRADOR(ES) no cumpla(n) con firmar el contrato de compraventa definitivo según se indica en la cláusula cuarta y octava del presente contrato."
 ];
 
 
@@ -146,7 +145,7 @@ const Contrato = ({ name, lastName, dni, contractNumber, formattedDate, address,
           />
         </View>
         <Text style={styles.title}>
-        PROYECTO PIURA ALEGRE
+        PROYECTO BAHIA DE SAN LUCAS
           {"\n"}
         COMPRAVENTA DE BIEN FUTURO
           {"\n"}
@@ -195,7 +194,7 @@ const Contrato = ({ name, lastName, dni, contractNumber, formattedDate, address,
         <Text style={styles.text}>
         Asimismo, <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput> indica(n) expresamente que ha recibido de 
           <DynamicInput> LA VENDEDORA </DynamicInput>de manera gratuita y previa a la firma del presente contrato, información
-        documentada sobre el Programa de Vivienda Social Techo Propio AVN, por lo que
+        documentada sobre el Proyecto de Casa de Campo, por lo que
         declara tener conocimiento de las características del futuro lote de terreno y del
         financiamiento de la operación; asimismo, acepta y reconoce que las firmas de los
         representantes legales de <DynamicInput>LA VENDEDORA</DynamicInput> podrán realizarse por medio electrónico y/o
@@ -206,34 +205,25 @@ const Contrato = ({ name, lastName, dni, contractNumber, formattedDate, address,
           ANTECEDENTES
           </Subtitle>
           {"\n"}
-          <DynamicInput>PRIMERA: LA VENDEDORA</DynamicInput> es propietaria de un lote de terreno con un área de 7 Ha
-        603.84905, ubicado en el Sector Los Pajaritos, Distrito de Veintiséis de Octubre, provincia
-        de Piura, departamento de Piura, el mismo que se encuentra inscrito en la Partida
-        Electrónica N° 04108665 del Registro de Propiedad Inmueble de la Oficina Registral de
-        Piura, cuya área, linderos y medidas perimétricas se hallan consignados en el referido
-        documento Registral.
+          <DynamicInput>PRIMERA: LA VENDEDORA</DynamicInput> es propietaria de dos lotes de terreno con un área de 20 Ha,
+        ubicado en el Sector Parte Alta - Pampa Congora, Distrito de Colán, provincia
+        de Paita, departamento de Piura, el mismo que se encuentra inscrito ante el registro el Registro de Propiedad Inmueble de la Oficina Registral de Piura, cuya área, linderos y medidas perimétricas se hallan consignados en el referido documento Registral, con las siguientes características:
         </Text>
         <Text style={styles.text}>
           <DynamicInput>SEGUNDA:</DynamicInput> Sobre parte del terreno detallado en la cláusula precedente, 
-          <DynamicInput>LA VENDEDORA</DynamicInput> desarrollará el Proyecto de Habilitación Urbana con Construcción
-        simultánea de Viviendas bajo el programa de vivienda social Techo Propio AVN
-        denominado <DynamicInput>PIURA ALEGRE</DynamicInput>, en el cual se considera la existencia de 475 viviendas,
+          <DynamicInput>LA VENDEDORA</DynamicInput> desarrollará el Proyecto de Casa de Campo
+        denominado <DynamicInput>BAHIA DE SAN LUCAS</DynamicInput>, en el cual se considera la existencia de 366 viviendas,
         entre las que se encuentra la proyectada como <DynamicInput>{terreno}</DynamicInput>, la misma que tendrá
-        un área construida de <DynamicInput>35.00 m2</DynamicInput>, en un lote de <DynamicInput>{metraje}</DynamicInput>, tal como se señala en el
-        documento denominado “Plano del Proyecto de Lotización para la construcción de
-        viviendas bajo el programa de vivienda social Techo Propio AVN” y del cual <DynamicInput>EL/LOS COMPRADOR(ES) </DynamicInput>
+        un área construida de <DynamicInput>{metraje}</DynamicInput>, tal como se señala en el
+        documento denominado “Plano del Proyecto de Lotización de Casa de Campo” y del cual <DynamicInput>EL/LOS COMPRADOR(ES) </DynamicInput>
         declara(n) tener pleno conocimiento.
         </Text>
         <Text style={styles.text}>
-        El citado Proyecto de Habilitación Urbana con Construcción simultánea de Viviendas bajo
-        el programa de vivienda social Techo Propio AVN se encuentra actualmente en proceso
+        El citado Proyecto de Casa de Campo se encuentra actualmente en proceso
         de elaboración, encontrándose pendiente su verificación, ajustes y final aprobación por
-        parte de la Municipalidad Distrital de Veintiséis de Octubre, por lo que <DynamicInput>EL/LOS
+        parte de la Municipalidad Distrital de Colán, por lo que <DynamicInput>EL/LOS
         COMPRADOR(ES)</DynamicInput> desde ya manifiesta(n) su conocimiento, aceptación y conformidad
-        con las modificaciones que se puedan introducir en el referido Proyecto de Habilitación
-        Urbana con Construcción simultánea de Viviendas bajo el programa de vivienda social
-        Techo Propio AVN, el cual incluye cambio de nomenclatura y área exactas del inmueble
-        referido en el párrafo precedente.
+        con las modificaciones que se puedan introducir en el referido Proyecto de Casa de Campo, el cual incluye cambio de nomenclatura y área exactas del inmueble referido en el párrafo precedente.
         </Text>
         <Text style={styles.text}>
           <DynamicInput>EL/LOS COMPRADOR(ES) </DynamicInput> indica(n) expresamente que ha(n) recibido por parte de <DynamicInput>LA VENDEDORA</DynamicInput>, 
@@ -242,30 +232,9 @@ const Contrato = ({ name, lastName, dni, contractNumber, formattedDate, address,
         conocimiento de las características del inmueble y del financiamiento de la operación.
         </Text>
         <Text style={styles.text}>
-          <Subtitle>CONOCIMIENTO DE LAS NORMAS DEL BFH</Subtitle>
-          {"\n"}
-          <DynamicInput>TERCERA: </DynamicInput> Ambas partes declaran conocer las normas que reglamentan el Bono
-        Familiar Habitacional (en adelante, “BFH”) obligándose al cumplimiento de las mismas,
-        entre las que están las referidas a las causales de calificación, pérdida, devolución, y
-        renuncia al BFH, así como la comprobación de falsedad en la información de <DynamicInput>EL/LOS
-        COMPRADOR(ES)</DynamicInput> como participante del BFH y las normas sobre la disponibilidad de la
-        vivienda adquirida con el referido subsidio.
-        </Text>
-        <Text style={styles.text}>
-        Asimismo, ambas partes declaran conocer lo señalado en las normas que regulan el BFH
-        respecto a que los asientos de inscripción de transferencia de propiedad de inmuebles
-        adquiridas con el financiamiento del BFH, consignarán adicionalmente en el resumen del
-        acto, que la adquisición del inmueble se ha financiado con el BFH.
-        </Text>
-        <Text style={styles.text}>
-          <DynamicInput>EL/LOS COMPRADOR(ES) </DynamicInput> declara(n), ser apto(s) para obtener el Bono Familiar
-        Habitacional (BFH) de acuerdo a los parámetros establecido por el programa de Techo
-        Propio.
-        </Text>
-        <Text style={styles.text}>
           <Subtitle>OBJETO DEL CONTRATO</Subtitle>
           {"\n"}
-          <DynamicInput>CUARTA: </DynamicInput> Al amparo de lo dispuesto en el artículo 1534º del Código Civil, por el presente
+          <DynamicInput>TERCERO: </DynamicInput> Al amparo de lo dispuesto en el artículo 1534º del Código Civil, por el presente
         contrato, <DynamicInput>LA VENDEDORA </DynamicInput> se obliga a transferir, en favor de <DynamicInput>EL/LOS COMPRADOR(ES) </DynamicInput> 
         la propiedad del Lote Futuro, a que se refiere la cláusula segunda de
         este documento, tal como quede definitivamente configurado. Por su parte, <DynamicInput>EL/LOS COMPRADOR(ES) </DynamicInput> 
@@ -284,13 +253,8 @@ const Contrato = ({ name, lastName, dni, contractNumber, formattedDate, address,
         de acuerdo a los términos y condiciones establecidas en las cláusulas siguientes.
         </Text>
         <Text style={styles.text}>
-          <DynamicInput>QUINTA: </DynamicInput> Las partes declaran, de mutuo acuerdo, que el Contrato de Compraventa
-        definitivo será celebrado siempre que la Municipalidad Distrital de Veintiséis de Octubre
-        emita y entregue a <DynamicInput>LA VENDEDORA </DynamicInput>la Resolución de Habilitación Urbana con
-        Construcción simultánea de Viviendas bajo el programa de vivienda social Techo Propio
-        AVN del Proyecto PIURA ALEGRE y además, que se haya asignado a <DynamicInput>EL/LOS COMPRADOR(ES) </DynamicInput>
-         el Bono Familiar Habitacional (BFH), siendo ambas condiciones
-        concurrentes; tras lo cual <DynamicInput>LA VENDEDORA </DynamicInput>previamente enviará de manera facultativa una
+          <DynamicInput>CUARTA: </DynamicInput> Las partes declaran, de mutuo acuerdo, que el Contrato de Compraventa
+        definitivo será celebrado siempre que <DynamicInput>LA VENDEDORA </DynamicInput> culmine la realización de las obras dentro del terreno señalado en la cláusula segunda y además, que <DynamicInput>EL/LOS COMPRADOR(ES) </DynamicInput> hayan cancelado la totalidad de su lote de terreno, siendo ambas condiciones concurrentes; tras lo cual <DynamicInput>LA VENDEDORA </DynamicInput>previamente enviará de manera facultativa una
         comunicación escrita a la dirección física o dirección electrónica o teléfono celular
         proporcionado por <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput> para que este último se acerque a sus
         oficinas a suscribir el contrato antes indicado, otorgándole para ello un plazo de treinta (30)
@@ -304,50 +268,27 @@ const Contrato = ({ name, lastName, dni, contractNumber, formattedDate, address,
         <Text style={styles.text}>
           <Subtitle>CONDICIÓN SUSPENSIVA</Subtitle>
           {"\n"}
-          <DynamicInput>SEXTA: </DynamicInput>Ambas partes acuerdan que el presente Contrato de COMPRAVENTA de Bien
+          <DynamicInput>QUINTA: </DynamicInput>Ambas partes acuerdan que el presente Contrato de COMPRAVENTA de Bien
         Futuro está sujeto a la condición suspensiva de que llegue a existir el bien futuro
-        señalado en la cláusula segunda, la obtención del Bono Familiar Habitacional (BFH). y su
-        correspondiente cancelación total del precio pactado incluyendo el BFH. Por lo tanto, al
+        señalado en la cláusula segunda y su
+        correspondiente cancelación total del precio pactado. Por lo tanto, al
         celebrarse la Escritura Pública correspondiente, deberá especificarse el cumplimiento de
         esta condición.
         </Text>
         <Text style={styles.text}>
           <Subtitle>PRECIO DEL INMUEBLE</Subtitle>
           {"\n"}
-          <DynamicInput>SÉTIMA: </DynamicInput>
+          <DynamicInput>SEXTA: </DynamicInput>
         Las partes acuerdan que el precio de venta del inmueble es el indicado en el
-        “Anexo Nº 01 - Tabla 1”, y que el mismo, se encuentra comprendido por el valor del
-        Bono Familiar Habitacional además del Crédito complementario con sus respectivos
+        “Anexo Nº 01 - Tabla 1”, y que el mismo, se encuentra comprendido por el valor del lote de terreno y
+        además del Crédito complementario con sus respectivos
         intereses compensatorios pactados.
-        </Text>
-        <Text style={styles.text}>
-      Se deja constancia que, el BFH está regulado por disposiciones gubernamentales, por
-tanto, está sujeto a todo tipo de variaciones. No obstante, el incremento o disminución del
-BFH no crea obligación de las partes de devolver, según sea el caso, monto de dinero
-alguno por la variación sufrida; haciéndose mutua gracia y recíproca donación de
-cualquier exceso o diferencia que hubiere, por el precio y por la extensión del bien. No
-teniendo <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput> nada que reclamar por ese concepto.
-        </Text>
-        <Text style={styles.text}>
-      Asimismo, las partes acuerdan que el precio pactado es el que real y justamente
-corresponde al bien materia de este contrato.
-        </Text>
-        <Text style={styles.text}>
-          <DynamicInput>LA VENDEDORA </DynamicInput>declara conocer que, el Bono Familiar Habitacional (BFH) se pagará
-luego de que a <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput> se le haya asignado el BFH y de que <DynamicInput>LA VENDEDORA</DynamicInput> 
-cumpla con los requisitos señalados en las normas que regulan el
-Desembolso del BFH.
-        </Text>
-        <Text style={styles.text}>
-      Si por cualquier motivo ajeno a <DynamicInput>LA VENDEDORA</DynamicInput>, este no llegara a recibir el BFH, la
-compraventa definitiva quedará en suspenso y, en caso el desembolso del BFH no se
-realice dentro del plazo máximo de seis meses posteriores a la calificación favorable de <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput> para recibir el BFH, este contrato podrá ser resuelto
-conforme a la cláusula décimo quinta.
+        Asimismo, las partes acuerdan que el precio pactado es el que real y justamente corresponde al bien materia de este contrato.
         </Text>
         <Text style={styles.text}>
           <Subtitle>DE LA CLÁUSULA AD CORPUS</Subtitle>
           {"\n"}
-          <DynamicInput>OCTAVA: </DynamicInput>
+          <DynamicInput>SÉTIMA: </DynamicInput>
         La compraventa del Lote Futuro, se realiza “AD CORPUS” y comprende el
 lote con sus usos, costumbres y todo por cuanto de hecho y por derecho le corresponde.
 No obstante, las partes hacen renuncia expresa a cualquier reclamación en relación a las
@@ -360,15 +301,9 @@ consentimiento para que realice dicho cambio.
         <Text style={styles.text}>
           <Subtitle>ENTREGA DEL INMUEBLE</Subtitle>
           {"\n"}
-          <DynamicInput>NOVENA: LA VENDEDORA </DynamicInput>
-        se compromete a desplegar los esfuerzos necesarios para
-concluir las obras de Habilitación Urbana con Construcción simultánea de Viviendas bajo
-el programa de vivienda social Techo Propio AVN denominado PIURA ALEGRE,
-debiendo proceder posteriormente a efectuar la entrega del inmueble descrito en la
-cláusula segunda a <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput>, en la fecha establecida en “Anexo N° 01
-- Tabla 3”, siempre que se haya suscrito el contrato definitivo de compraventa, y <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput> 
-haya(n) sido beneficiado(s) con la asignación del BFH y se
-encuentre(n), a la fecha de entrega del inmueble, al día en el pago de sus cuotas.
+          <DynamicInput>OCTAVA: LA VENDEDORA </DynamicInput>
+        se compromete a desplegar los esfuerzos necesarios para concluir las obras necesarias para una adecuada vivencia dentro del terreno donde se construirá el Proyecto de Casa de Campo, debiéndose tomar en cuenta que <DynamicInput>LA VENDEDORA</DynamicInput>, se compromete a proporcionar servicios básicos de agua y luz a sus clientes, así como la construcción de pistas principales y secundarias a nivel de afirmado, manzaneo y lotización, así como la orientación a nuestros clientes para la instalación de biodigestores como sistema alternativo para el alcantarillado y la construcción de un cerco vivo en todo el perímetro del terreno matriz con su respectivo pórtico de ingreso y caseta de vigilancia, debiendo proceder posteriormente a efectuar la entrega del inmueble descrito en la cláusula segunda a <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput>
+        en la fecha establecida en “Anexo N° 01 - Tabla 3”, siempre que se haya suscrito el contrato definitivo de compraventa, debiendo establecer que la independización de cada lotes del predio matriz, es por cuenta propia de cada cliente. Así como dejarse establecido que los gastos notariales por la celebración de la Escritura Publica corresponde por parte del <DynamicInput>COMPRADOR(ES)</DynamicInput> 
         </Text>
         <Text style={styles.text}>
       En caso <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput> mantenga(n) impaga una o más cuotas, o
@@ -392,30 +327,9 @@ la obligación de entrega por parte de <DynamicInput>LA VENDEDORA </DynamicInput
 de nivelación o limpieza especial del terreno.
         </Text>
         <Text style={styles.text}>
-          <Subtitle>GARANTÍA DE OBRA</Subtitle>
-          {"\n"}
-          <DynamicInput>DÉCIMA: </DynamicInput>
-        Al tratarse de la venta de una unidad inmobiliaria nueva y sin uso anterior, <DynamicInput>LA VENDEDORA </DynamicInput>
-        otorga a favor de <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput> plena y total garantía de la
-        obra de conformidad con el artículo 1784° del Código Civil, por el plazo de cinco (05)
-        años a partir de la fecha de entrega efectiva del inmueble. En este sentido, si en el curso
-        de los cinco años desde la aceptación de la obra por parte de los <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput>, 
-        ésta se destruye, total o parcialmente, o bien presenta evidente
-        peligro de ruina o graves defectos por vicio de la construcción, <DynamicInput>LA VENDEDORA </DynamicInput>asumirá
-        total responsabilidad por los daños ante <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput> o sus herederos,
-        siempre
-        que los mismos lo hayan acreditado fehacientemente y de manera previa y objetiva
-        mediante aviso por escrito de fecha cierta dentro de los seis meses siguientes al
-        descubrimiento.
-        </Text>
-        <Text style={styles.text}>
-      El plazo para interponer la acción judicial correspondiente es de un año computado
-desde el día siguiente al aviso referido anteriormente.
-        </Text>
-        <Text style={styles.text}>
           <Subtitle>REPROGRAMACIÓN DE CUOTAS Y CONSECUENTE GASTO ADMINISTRATIVO:</Subtitle>
           {"\n"}
-          <DynamicInput>DÉCIMO PRIMERA: </DynamicInput>  
+          <DynamicInput>NOVENA: </DynamicInput>  
 Si <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput> solicita(n) a <DynamicInput>LA VENDEDORA</DynamicInput> la
 reprogramación de alguna de las cuotas del precio de venta detalladas en el “Anexo N°
 01 - Tabla 2”, su solicitud será recibida y evaluada por <DynamicInput>LA VENDEDORA</DynamicInput> dentro de los
@@ -437,34 +351,24 @@ pactados
         <Text style={styles.text}>
           <Subtitle>CESIÓN DE POSICIÓN CONTRACTUAL O CAMBIO DE TITULAR:</Subtitle>
           {"\n"}
-          <DynamicInput>DÉCIMO SEGUNDA: </DynamicInput>  
+          <DynamicInput>DÉCIMO: </DynamicInput>  
           <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput> podrá(n) ceder su posición contractual
 a un tercero, siempre que medie la conformidad por parte de <DynamicInput>LA VENDEDORA</DynamicInput> de
 acuerdo a lo establecido en el art. 1435 del código civil. Para ello, presentará(n) una
-solicitud con los datos del cesionario relacionados al Proyecto Techo Propio.
+solicitud con los datos del cesionario.
         </Text>
         <Text style={styles.text}>
-      La recepción de la misma, no implica aceptación de ninguna clase por parte de <DynamicInput>LA VENDEDORA</DynamicInput>, 
-      se cobrará la suma de <DynamicInput>S/ 100.00 (Cien con 00/100 Soles)</DynamicInput> por concepto
-de gastos administrativos y, se someterá al cesionario a calificación por parte del
-Programa Techo Propio, siendo esta institución quien lo calificará, de ser calificado
-positivamente se procederá a la firma del contrato de cesión de posición contractual
-correspondiente, quedando el cesionario obligado a cumplir con los requisitos del BFH y
-asumir todos los derechos y obligaciones contenidos en el presente contrato.
-Para el caso que <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput> deseara(n) inscribir la transferencia de la
-propiedad del inmueble financiado con el BFH a un tercero, que hubiese(n) efectuado
-
-dentro del plazo de restricción establecido por las normas que regulan el BFH, será
-necesaria la presentación de una Constancia Favorable emitida por el Fondo
-MIVIVIENDA S.A., por lo que sin esta Constancia no podrá inscribirse dicha transferencia
-de propiedad. En este caso, <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput> procederá(n) a la devolución
-inmediata del importe del BFH y de los intereses legales generados, según corresponda,
-al Fondo MIVIVIENDA S.A.
+          La recepción de la misma, no implica aceptación de ninguna clase por parte de <DynamicInput>LA VENDEDORA</DynamicInput>, 
+          se cobrará la suma de <DynamicInput>S/ 100.00 (Cien con 00/100 Soles)</DynamicInput> por concepto
+    de gastos administrativos y, de ser calificado
+    positivamente se procederá a la firma del contrato de cesión de posición contractual
+    correspondiente, quedando el cesionario obligado a cumplir con los requisitos y
+    asumir todos los derechos y obligaciones contenidos en el presente contrato.
         </Text>
         <Text style={styles.text}>
           <Subtitle>PREPAGO DEL SALDO DEL PRECIO DE VENTA:</Subtitle>
           {"\n"}
-          <DynamicInput>DÉCIMO TERCERA: </DynamicInput>  
+          <DynamicInput>DÉCIMO PRIMERA: </DynamicInput>  
           <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput> podrá(n) solicitar a 
           <DynamicInput> LA VENDEDORA</DynamicInput> realizar el prepago del saldo del precio de venta pendiente de pago, 
         en cuyo caso <DynamicInput>LA VENDEDORA</DynamicInput> preparará la liquidación correspondiente con la consiguiente reducción de
@@ -475,7 +379,7 @@ sean aplicables penalidades de algún tipo o cobros de naturaleza o efecto simil
         <Text style={styles.text}>
           <Subtitle>TÍTULO DE CRÉDITO HIPOTECARIO NEGOCIABLE:</Subtitle>
           {"\n"}
-          <DynamicInput>DÉCIMO CUARTA: </DynamicInput>  
+          <DynamicInput>DÉCIMO SEGUNDA: </DynamicInput>  
           <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput> declara(n) que en caso el saldo del
 precio del inmueble materia de compraventa fuera cancelado con un préstamo de una
 institución financiera intermediaria, autorizará a dicha institución a emitir un Título de
@@ -485,7 +389,7 @@ compraventa adquiere.
         <Text style={styles.text}>
           <Subtitle>LA RESOLUCÍÓN DEL CONTRATO:</Subtitle>
           {"\n"}
-          <DynamicInput>DÉCIMO QUINTA: </DynamicInput>
+          <DynamicInput>DÉCIMO TERCERO: </DynamicInput>
         Las partes acuerdan la resolución del contrato por las siguientes
 causales:
         </Text>
@@ -499,7 +403,7 @@ causales:
         <Text style={styles.text}>
           <Subtitle>PENALIDAD POR RESOLUCIÓN DE CONTRATO.</Subtitle>
           {"\n"}
-          <DynamicInput>DÉCIMO SEXTA: </DynamicInput>
+          <DynamicInput>DÉCIMO CUARTA: </DynamicInput>
         En los supuestos establecidos en la cláusula anterior, se aplicará la
 penalidad correspondiente según lo detallado a continuación:
         </Text>
@@ -522,7 +426,7 @@ devolución a favor de <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput>.
         <Text style={styles.text}>
           <Subtitle>RESOLUCIÓN POR INCUMPLIMIENTO EN EL PAGO DE LAS CUOTAS</Subtitle>
           {"\n"}
-          <DynamicInput>DÉCIMO SÉTIMA: </DynamicInput>
+          <DynamicInput>DÉCIMO QUINTA: </DynamicInput>
         En caso de falta de pago o pago tardío de cualquiera de las cuotas
 establecidas en el “Anexo N° 01 - Tabla N° 02”, <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput> deberá(n)
 abonar a <DynamicInput>LA VENDEDORA</DynamicInput> los intereses moratorios correspondientes sobre el monto de
@@ -559,7 +463,7 @@ de realización del pago.
         <Text style={styles.text}>
           <Subtitle>POR RESOLUCIÓN UNILATERAL DE EL COMPRADOR QUE NO ESTÁ EN MORA:</Subtitle>
           {"\n"}
-          <DynamicInput>DÉCIMO OCTAVA: </DynamicInput> 
+          <DynamicInput>DÉCIMO SEXTA: </DynamicInput> 
           <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput> no moroso, puede solicitar la resolución
 unilateral del presente contrato, mediante una solicitud dirigida a <DynamicInput>LA VENDEDORA</DynamicInput>,
 expresando la causa de su decisión. Dicha solicitud deberá de ser respondida en el plazo
@@ -576,61 +480,10 @@ Adicionalmente, <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput> se obliga(n) a
 Administrativo la suma de <DynamicInput>S/ 35.00 (treinta y cinco con 00/100 Nuevos Soles)</DynamicInput>. 
         </Text>
         <Text style={styles.text}>
-          <Subtitle>RESOLUCIÓN POR NO CALIFICAR O PERDER EL COMPRADOR/LOS
-COMPRADOR(ES) EL BONO FAMILIAR HABITACIONAL</Subtitle>
-          {"\n"}
-          <DynamicInput>DÉCIMO NOVENA: </DynamicInput> 
-        De acuerdo a lo establecido en la cláusula tercera de este contrato,
-si <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput> no califica(n) para la obtención del Bono Familiar
-Habitacional, o habiéndolo obtenido, lo pierde(n); se produce la resolución automática del
-contrato de dentro de los alcances de lo establecido en el artículo 1430° del Código Civil,
-para ello, cualquiera de las partes podrá solicitar a la otra, mediante una carta notarial
-comunicándole su decisión de resolver el presente contrato.
-        </Text>
-        <Text style={styles.text}>
-      Producida la comunicación que se detalla en la cláusula anterior, <DynamicInput>LA VENDEDORA</DynamicInput> en
-un plazo de 30 (treinta) días calendarios deberá realizar la devolución de ser el caso, del
-monto de dinero cancelado, previa aplicación de lo establecido en la cláusula décimo
-sexta del contrato.
-        </Text>
-        <Text style={styles.text}>
-      Si a la firma del contrato definitivo, <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput> no llegase(n) a ser
-beneficiario(s) del BFH. Ambas partes dejan claramente establecido que esta causal
-también se verificará con la primera denegación de la asignación del BFH a <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput>, 
-aun así, no se hubiese terminado de cumplir el referido plazo. Es
-aplicable también al supuesto en que <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput> sea beneficiario del
-BFH, pero por cualquier causa ajena a <DynamicInput>LA VENDEDORA</DynamicInput> este no recibiera el desembolso
-del BFH.
-        </Text>
-        <Text style={styles.text}>
-          <Subtitle>EFECTOS DE LA RESOLUCIÓN RESPECTO DEL BFH</Subtitle>
-          {"\n"}
-          <DynamicInput>VIGÉSIMA: </DynamicInput> 
-        Cuando se resuelva el presente contrato, <DynamicInput>LA VENDEDORA</DynamicInput> deberá devolver
-el importe del BFH y el monto que hubiese recibido de <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput>. En
-este sentido, <DynamicInput>LA VENDEDORA</DynamicInput> devolverá el monto del BFH al Fondo MIVIVIENDA S.A.
-en el plazo de treinta (30) días calendario y el saldo resultante después de aplicar la
-penalidad indicada en la cláusula décimo sexta a <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput>, en el plazo de
-treinta (30) días calendario, en ambos casos, contados desde la fecha de resolución del
-contrato.
-        </Text>
-        <Text style={styles.text}>
-      Si <DynamicInput>LA VENDEDORA</DynamicInput> no cumpliera con devolver el BFH al Fondo MIVIVIENDA S.A. o el
-saldo resultante de devengar la penalidad indicada en la décimo quinta de este contrato a
-          <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput>en los plazos anteriormente señalados, incurrirá en mora
-automática devengándose un interés equivalente a la tasa interés legal fijada por el
-Banco Central de Reserva del Perú.
-        </Text>
-        <Text style={styles.text}>
-El devengo de los intereses moratorios no perjudicará la facultad del Fondo
-MIVIVIENDA S.A. de ejecutar la garantía presentada por <DynamicInput>LA VENDEDORA</DynamicInput> para
-respaldar el desembolso del BFH y el pago del crédito complementario.
-        </Text>
-        <Text style={styles.text}>
           <Subtitle>RESOLUCIÓN POR INCUMPLIMIENTO DE LAS OBLIGACIONES CONTRACTUALES
 Y CAUSAS IMPUTABLES A EL COMPRADOR</Subtitle>
           {"\n"}
-          <DynamicInput>VIGÉSIMO PRIMERA: </DynamicInput> 
+          <DynamicInput>DECIMO SETIMA: </DynamicInput> 
         Ambas partes declaran que serán causales de resolución del
 presente contrato, por parte de <DynamicInput>LA VENDEDORA</DynamicInput>, de acuerdo a lo estipulado en el
 artículo 1429º del Código Civil, las siguientes:
@@ -657,7 +510,7 @@ Gastos Administrativos la suma de <DynamicInput>S/ 35.00 (treinta y cinco con 00
         <Text style={styles.text}>
           <Subtitle>RESOLUCIÓN POR CAUSA IMPUTABLE A LA VENDEDORA.</Subtitle>
           {"\n"}
-          <DynamicInput>VIGÉSIMO SEGUNDA: </DynamicInput> 
+          <DynamicInput>DECIMO OCTAVA: </DynamicInput> 
         En caso que la compraventa no llegara a celebrarse por causa
 imputable a <DynamicInput>LA VENDEDORA</DynamicInput>, ésta devolverá a <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput> toda suma
 que haya sido entregada a cuenta del precio del bien, incluyendo los intereses moratorios
@@ -675,7 +528,7 @@ imputables, salvo que lo contrario esté previsto expresamente por la ley.
         <Text style={styles.text}>
           <Subtitle>DEVOLUCIÓN DEL PAGARÉ.</Subtitle>
           {"\n"}
-          <DynamicInput>VIGÉSIMO TERCERA: </DynamicInput> 
+          <DynamicInput>DECIMO NOVENA: </DynamicInput> 
           <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput> reconoce(n) que <DynamicInput>LA VENDEDORA </DynamicInput> 
 está facultada a remitir el pagaré suscrito a una entidad financiera para la gestión de
 cobranza o en calidad de garantía, sin que ello implique que la entidad financiera realice
@@ -689,19 +542,11 @@ que permita la ley de la materia, destruyéndose el título valor cancelado.”
         <Text style={styles.text}>
           <Subtitle>GRAVÁMENES Y CARGAS</Subtitle>
           {"\n"}
-          <DynamicInput>VIGÉSIMO CUARTA: </DynamicInput> 
+          <DynamicInput>VIGÉSIMO: </DynamicInput> 
         Al momento de celebrar el presente contrato, <DynamicInput>EL/LOS COMPRADOR(ES) </DynamicInput>
          declara(n), en forma expresa, tener perfecto conocimiento del estado
 y situación en la que se encuentran los títulos de propiedad de los lotes de terreno
 individualizados en las cláusulas primera y tercera de este mismo documento.
-        </Text>
-        <Text style={styles.text}>
-      En ese sentido, <DynamicInput>LA VENDEDORA</DynamicInput> garantiza a <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput> que, al
-momento de celebrarse el contrato definitivo de compraventa, la partida registral del lote
-de terreno se encontrará debidamente independizada y saneada. Asimismo, declara que
-sobre el lote de terreno materia de la futura transferencia de dominio no pesa ninguna
-hipoteca, embargo, carga, gravamen ni medida judicial o extrajudicial que limite su
-dominio y libre disposición, obligándose, no obstante, al saneamiento de ley.
         </Text>
         <Text style={styles.text}>
       Sin perjuicio de ello, en el supuesto que <DynamicInput>LA VENDEDORA</DynamicInput> haya entregado a <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput> la posesión del inmueble descrito en la cláusula segunda del
@@ -727,7 +572,7 @@ Registros Públicos de Piura.
         <Text style={styles.text}>
           <Subtitle>GASTOS Y TRIBUTOS</Subtitle>
           {"\n"}
-          <DynamicInput>VIGÉSIMO QUINTA: </DynamicInput> 
+          <DynamicInput>VIGÉSIMO PRIMERA: </DynamicInput> 
         Ambas partes de común acuerdo pactan lo siguiente para efectos
 del pago de los tributos:
         </Text>
@@ -739,7 +584,7 @@ del pago de los tributos:
           ))}
         </List>
         <Text style={styles.text}>
-      Respecto de los gastos LAS PARTES acuerdan que, todos los gastos necesarios para la
+      Respecto de los gastos <DynamicInput>LAS PARTES</DynamicInput> acuerdan que, todos los gastos necesarios para la
 formalización del título de propiedad a nombre de <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput>, tales
 como minuta, asesoría legal, derechos notariales y registrales serán asumidos por
           <DynamicInput> EL/LOS COMPRADOR(ES)</DynamicInput>.
@@ -751,12 +596,12 @@ desde la fecha en que hayan sido notificados con la comunicación que les requie
 acercarse a suscribir el respectivo Contrato de Compraventa; en ese sentido, <DynamicInput>LA VENDEDORA</DynamicInput> 
 se compromete a alcanzar una liquidación del saldo a pagar por los
 conceptos citados anteriormente, previa a la entrega del inmueble, la cual deberá ser
-cancelada por <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput>
+cancelada por <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput> en un plazo máximo de cinco (05) días hábiles de recibida dicha liquidación.
         </Text>
         <Text style={styles.text}>
           <Subtitle>FIDEICOMISO</Subtitle>
           {"\n"}
-          <DynamicInput>VIGÉSIMO SEXTA: </DynamicInput> 
+          <DynamicInput>VIGÉSIMO SEGUNDA: </DynamicInput> 
         Por este medio se deja constancia que <DynamicInput>LA VENDEDORA</DynamicInput> podrá
 celebrar un contrato de fideicomiso para el Proyecto en el que se construirá el inmueble
 materia de la compraventa, con lo cual <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput> manifiesta(n) su total
@@ -765,7 +610,7 @@ conformidad.
         <Text style={styles.text}>
           <Subtitle>DE LA PROTECCIÓN DE DATOS PERSONALES</Subtitle>
           {"\n"}
-          <DynamicInput>VIGÉSIMO SÉTIMA: </DynamicInput> 
+          <DynamicInput>VIGÉSIMO TERCERA: </DynamicInput> 
         Para efectos del tratamiento de los datos personales que <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput> proporcione(n) a <DynamicInput>LA VENDEDORA</DynamicInput>, se entiende que ésta será
 responsable de dicho tratamiento, uso, almacenamiento y protección, de conformidad
 con lo previsto por la Ley N° 29733, Ley de Protección de Datos Personales, y su
@@ -802,9 +647,9 @@ seguridad administrativas, técnicas, físicas y legales que permitan garantizar
 protección de los datos personales brindados por <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput>.
         </Text>
         <Text style={styles.text}>
-          <Subtitle>DE LA PROTECCIÓN DE DATOS PERSONALES</Subtitle>
+          <Subtitle>SOLUCIÓN DE CONTROVERSIAS</Subtitle>
           {"\n"}
-          <DynamicInput>VIGÉSIMO OCTAVA: </DynamicInput> 
+          <DynamicInput>VIGÉSIMO CUARTA: </DynamicInput> 
         Queda expresamente establecido que en el improbable caso que
 surja cualquier controversia o discrepancia en relación con la interpretación,
 cumplimiento y/o ejecución de lo pactado en este documento, los suscribientes
@@ -827,7 +672,7 @@ anticipación, sin cuyo requisito no surtirá efecto legal alguno dicho cambio.
         <Text style={styles.text}>
           <Subtitle>DOMICILIO</Subtitle>
           {"\n"}
-          <DynamicInput>VIGÉSIMO NOVENA: </DynamicInput> 
+          <DynamicInput>VIGÉSIMO QUINTA: </DynamicInput> 
         En el supuesto de envío de cartas notariales, éstas serán dirigidas
 al domicilio expresado por <DynamicInput>EL/LOS COMPRADOR(ES)</DynamicInput> en la introducción del presente
 documento, quien ratifica dicha dirección como válida para recibir cualquier tipo de
