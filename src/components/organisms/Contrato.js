@@ -91,9 +91,9 @@ const styles = StyleSheet.create({
   detailContainer: {
     flexDirection: "row",
   },
-row: {
-  flexDirection: "row",
-  border: "0.5px solid black",
+  row: {
+    flexDirection: "row",
+    border: "0.5px solid black",
   },
   fullColumn: {
     width: "100%",
@@ -116,8 +116,8 @@ row: {
     fontSize: 10,
   },
   container: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     marginBottom: 10,
   },
   textAndMargin: {
@@ -256,30 +256,30 @@ const Contrato = ({ name, lastName, dni, contractNumber, formattedDate, address,
         </Text>
         <>
           <View style={styles.wrapper}>
-          <View style={styles.container}>
-                {/* LOTE */}
-                <Text style={styles.batchText}><DynamicInput>LOTE:</DynamicInput></Text>
-                {/* Separación */}
-                <Text style={styles.batchText}>&nbsp;&nbsp;</Text>
-                {/* Número de lote */}
-                <Text style={styles.batchText}><DynamicInput>02</DynamicInput></Text>
-                {/* Separación */}
-                <Text style={styles.batchText}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Text>
-                {/* MANZANA */}
-                <Text style={styles.batchText}><DynamicInput>MANZANA:</DynamicInput></Text>
-                {/* Separación */}
-                <Text style={styles.batchText}>&nbsp;&nbsp;</Text>
-                {/* Número de manzana */}
-                <Text style={styles.batchText}><DynamicInput>43</DynamicInput></Text>
-                {/* Separación */}
-                <Text style={styles.batchText}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Text>
-                {/* SUPERFICIE */}
-                <Text style={styles.batchText}><DynamicInput>SUPERFICIE:</DynamicInput></Text>
-                {/* Separación */}
-                <Text style={styles.batchText}>&nbsp;&nbsp;</Text>
-                {/* Superficie */}
-                <Text style={styles.batchText}><DynamicInput>100,000 M2</DynamicInput></Text>
-              </View>
+            <View style={styles.container}>
+              {/* LOTE */}
+              <Text style={styles.batchText}><DynamicInput>LOTE:</DynamicInput></Text>
+              {/* Separación */}
+              <Text style={styles.batchText}>&nbsp;&nbsp;</Text>
+              {/* Número de lote */}
+              <Text style={styles.batchText}><DynamicInput>02</DynamicInput></Text>
+              {/* Separación */}
+              <Text style={styles.batchText}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Text>
+              {/* MANZANA */}
+              <Text style={styles.batchText}><DynamicInput>MANZANA:</DynamicInput></Text>
+              {/* Separación */}
+              <Text style={styles.batchText}>&nbsp;&nbsp;</Text>
+              {/* Número de manzana */}
+              <Text style={styles.batchText}><DynamicInput>43</DynamicInput></Text>
+              {/* Separación */}
+              <Text style={styles.batchText}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Text>
+              {/* SUPERFICIE */}
+              <Text style={styles.batchText}><DynamicInput>SUPERFICIE:</DynamicInput></Text>
+              {/* Separación */}
+              <Text style={styles.batchText}>&nbsp;&nbsp;</Text>
+              {/* Superficie */}
+              <Text style={styles.batchText}><DynamicInput>100,000 M2</DynamicInput></Text>
+            </View>
             <View style={styles.row}>
               <Text style={styles.fullColumn}>CUADRO DE COORDENADAS UTM - DATUM WGS84 ZONA 17 SUR</Text>
             </View>
@@ -291,61 +291,61 @@ const Contrato = ({ name, lastName, dni, contractNumber, formattedDate, address,
               <Text style={styles.column}>NORTE (Y)</Text>
             </View>
             <View style={styles.row}>
-            <Text style={styles.firstColumn}>897</Text>
-            <Text style={styles.column}>897-892</Text>
-            <Text style={styles.column}>500</Text>
-            <Text style={styles.column}>497668.2373</Text>
-            <Text style={styles.column}>9442962.9915</Text>
-          </View>
-          <View style={styles.row}>
-            <Text style={styles.firstColumn}>892</Text>
-            <Text style={styles.column}>892-891</Text>
-            <Text style={styles.column}>200</Text>
-            <Text style={styles.column}>497192.4879</Text>
-            <Text style={styles.column}>9443116.8171</Text>
-          </View>
-          <View style={styles.row}>
-            <Text style={styles.firstColumn}>891</Text>
-            <Text style={styles.column}>891-867</Text>
-            <Text style={styles.column}>500</Text>
-            <Text style={styles.column}>497254.0183</Text>
-            <Text style={styles.column}>9443307.1174</Text>
-          </View>
-          <View style={styles.row}>
-            <Text style={styles.firstColumn}>867</Text>
-            <Text style={styles.column}>867-897</Text>
-            <Text style={styles.column}>200</Text>
-            <Text style={styles.column}>497729.7677</Text>
-            <Text style={styles.column}>9443153.2918</Text>
-          </View>
+              <Text style={styles.firstColumn}>897</Text>
+              <Text style={styles.column}>897-892</Text>
+              <Text style={styles.column}>500</Text>
+              <Text style={styles.column}>497668.2373</Text>
+              <Text style={styles.column}>9442962.9915</Text>
+            </View>
+            <View style={styles.row}>
+              <Text style={styles.firstColumn}>892</Text>
+              <Text style={styles.column}>892-891</Text>
+              <Text style={styles.column}>200</Text>
+              <Text style={styles.column}>497192.4879</Text>
+              <Text style={styles.column}>9443116.8171</Text>
+            </View>
+            <View style={styles.row}>
+              <Text style={styles.firstColumn}>891</Text>
+              <Text style={styles.column}>891-867</Text>
+              <Text style={styles.column}>500</Text>
+              <Text style={styles.column}>497254.0183</Text>
+              <Text style={styles.column}>9443307.1174</Text>
+            </View>
+            <View style={styles.row}>
+              <Text style={styles.firstColumn}>867</Text>
+              <Text style={styles.column}>867-897</Text>
+              <Text style={styles.column}>200</Text>
+              <Text style={styles.column}>497729.7677</Text>
+              <Text style={styles.column}>9443153.2918</Text>
+            </View>
           </View>
         </>        
         <>
           <View style={styles.wrapper}>
-          <View style={styles.container}>
-                {/* LOTE */}
-                <Text style={styles.batchText}><DynamicInput>LOTE:</DynamicInput></Text>
-                {/* Separación */}
-                <Text style={styles.batchText}>&nbsp;&nbsp;</Text>
-                {/* Número de lote */}
-                <Text style={styles.batchText}><DynamicInput>01</DynamicInput></Text>
-                {/* Separación */}
-                <Text style={styles.batchText}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Text>
-                {/* MANZANA */}
-                <Text style={styles.batchText}><DynamicInput>MANZANA:</DynamicInput></Text>
-                {/* Separación */}
-                <Text style={styles.batchText}>&nbsp;&nbsp;</Text>
-                {/* Número de manzana */}
-                <Text style={styles.batchText}><DynamicInput>43</DynamicInput></Text>
-                {/* Separación */}
-                <Text style={styles.batchText}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Text>
-                {/* SUPERFICIE */}
-                <Text style={styles.batchText}><DynamicInput>SUPERFICIE:</DynamicInput></Text>
-                {/* Separación */}
-                <Text style={styles.batchText}>&nbsp;&nbsp;</Text>
-                {/* Superficie */}
-                <Text style={styles.batchText}><DynamicInput>100,000 M2</DynamicInput></Text>
-              </View>
+            <View style={styles.container}>
+              {/* LOTE */}
+              <Text style={styles.batchText}><DynamicInput>LOTE:</DynamicInput></Text>
+              {/* Separación */}
+              <Text style={styles.batchText}>&nbsp;&nbsp;</Text>
+              {/* Número de lote */}
+              <Text style={styles.batchText}><DynamicInput>01</DynamicInput></Text>
+              {/* Separación */}
+              <Text style={styles.batchText}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Text>
+              {/* MANZANA */}
+              <Text style={styles.batchText}><DynamicInput>MANZANA:</DynamicInput></Text>
+              {/* Separación */}
+              <Text style={styles.batchText}>&nbsp;&nbsp;</Text>
+              {/* Número de manzana */}
+              <Text style={styles.batchText}><DynamicInput>43</DynamicInput></Text>
+              {/* Separación */}
+              <Text style={styles.batchText}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Text>
+              {/* SUPERFICIE */}
+              <Text style={styles.batchText}><DynamicInput>SUPERFICIE:</DynamicInput></Text>
+              {/* Separación */}
+              <Text style={styles.batchText}>&nbsp;&nbsp;</Text>
+              {/* Superficie */}
+              <Text style={styles.batchText}><DynamicInput>100,000 M2</DynamicInput></Text>
+            </View>
             <View style={styles.row}>
               <Text style={styles.fullColumn}>CUADRO DE COORDENADAS UTM - DATUM WGS84 ZONA 17 SUR</Text>
             </View>
