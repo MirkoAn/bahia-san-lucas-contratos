@@ -54,7 +54,6 @@ const Form = ({ formData, setFormData }) => {
 
   const handleCheckBox = (event) => {
     const { name, checked} = event.target;
-    console.log("isChecked", event.target.checked);
     setFormData({ ...formData, [name]: checked });
   };
 

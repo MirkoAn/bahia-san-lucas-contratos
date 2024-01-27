@@ -109,7 +109,7 @@ const FinalStep = ({ formData, setFormData }) => {
           value={formData.metraje}
           name='metraje'
           onChange={handleInputChange}
-          placeholder='Ejemplo: 60 m2'
+          placeholder='Ejemplo: 360 m2'
         />        
         <CustomButton allInputsCompleted={true}>
           GENERAR DOCUMENTOS

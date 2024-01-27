@@ -90,7 +90,7 @@ const DeclaracionJurada = ({ name, lastName, dni, address, terreno, ocupacion, f
           {"\n"}
           Que, los pagos que realizo a favor de la <DynamicInput>Empresa Inmobiliaria &amp; Constructora Piura Norte SRL</DynamicInput>, con
           RUC Nº 20610822330, por la adquisición de mi Lote de Terreno ubicado en {terreno},
-          del Proyecto Inmobiliario Piura Alegre, son producto de mis ingresos que percibo como {ocupacion},
+          del Proyecto Inmobiliario Bahia San Lucas, son producto de mis ingresos que percibo como {ocupacion},
           formulando la presente declaración, en virtud del principio de presunción de veracidad previsto en
           los artículos IV numeral 1.7 y 42º de la Ley del Procedimiento Administrativo General - Ley Nº 27444,
           sujetándome a las acciones legales y/o penales que correspondan en caso de resultar falso lo que
